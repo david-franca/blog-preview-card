@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  /* Typography */
+  color: theme("colors.gray.950");
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: theme("spacing.200");
+    border: 1px solid theme("colors.gray.950");
+    box-shadow: theme("boxShadow.card");
+    background-color: #ffffff;
+    padding: 1.5rem;
+    max-width: 24rem;
+    border-radius: 1.25rem;
+  }
+}
